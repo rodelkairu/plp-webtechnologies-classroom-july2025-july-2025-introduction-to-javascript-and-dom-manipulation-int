@@ -1,0 +1,57 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Fruits Layout + JS Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Fruit World</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#content">Fruits</a></li>
+          <li><a href="#sidebar">Tips</a></li>
+          <li><a href="#footer">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <main id="content">
+        <h2>Fruit Cards</h2>
+        <div class="card-grid">
+          <article class="card" id="apple">
+            <h3>Apple</h3>
+            <p>Sweet, crunchy, and full of fiber.</p>
+            <button onclick="highlightCard('apple')">Highlight</button>
+          </article>
+          <article class="card" id="banana">
+            <h3>Banana</h3>
+            <p>Creamy, soft, and rich in potassium.</p>
+            <button onclick="highlightCard('banana')">Highlight</button>
+          </article>
+          <article class="card" id="mango">
+            <h3>Mango</h3>
+            <p>Juicy and tropical with vitamins A & C.</p>
+            <button onclick="highlightCard('mango')">Highlight</button>
+          </article>
+        </div>
+      </main>
+
+      <aside id="sidebar">
+        <h2>Fruit Tips</h2>
+        <ul id="fruit-list"></ul>
+        <button id="add-fruit-btn">Add Random Fruit</button>
+      </aside>
+    </div>
+
+    <footer id="footer">
+      <p>&copy; 2025 Fruit World — Built with HTML, CSS, JS</p>
+      <button id="change-title-btn">Change Title</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
